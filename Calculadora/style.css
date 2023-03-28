@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+/* O estilo da calculadora */
+.calculadora {
+    width: 250px;
+    height: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f0f0;
+  }
+  
+  /* O estilo do campo de resultado */
+  .resultado {
+    width: 100%;
+    height: 50px;
+    font-size: 25px;
+    text-align: right;
+    margin-bottom: 10px;
+    padding-right: 10px;
+  }
+  
+  /* O estilo dos botões */
+  .btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    margin: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #fff;
+    transition: all 0.2s ease;
+  }
+  
+  /* O estilo dos botões quando o cursor está sobre eles */
+  .btn:hover {
+    background-color: #ddd;
+  }
+  
+  /* O estilo dos botões de operação */
+  .operador {
+    background-color: #ffa500;
+    color: #fff;
+  }
+  
+  /* O estilo do botão Apagar */
+  .apagar {
+    background-color: #ff0000;
+    color: #fff;
+  }
+  
