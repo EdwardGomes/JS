@@ -1,12 +1,23 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
+  document.addEventListener("contextmenu", (event) => {
+    event.preventDefault();
 
-    const face = document.querySelector('.face')
-    let count = 0
-    function moveBob() {
-        count += 50
-        
-        face.style.left = count + 'px'
-          
+    const face = document.querySelector(".face");
+    let count = 0;
+    function moveBobLeft() {
+      count += 50;
+      if (count <= 800) {
+        face.style.left = count + "px";
+      }
     }
-        face.addEventListener('click', moveBob)
-   })
+
+    function moveBobRight() {
+      count -= 50;
+      if (count >= -800) {
+        face.style.left = count + "px";
+      }
+    }
+    face.addEventListener("click", moveBobLeft);
+    face.addEventListener("contextmenu", moveBobRight);
+  });
+});
