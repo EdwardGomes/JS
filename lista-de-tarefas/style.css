@@ -1,0 +1,221 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	background-color: #f2f2f2;
+}
+
+.container {
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+}
+
+h1 {
+	text-align: center;
+	font-size: 2em;
+	margin-bottom: 20px;
+}
+
+input[type="text"] {
+	padding: 10px;
+	width: 70%;
+	border-radius: 5px;
+	border: none;
+	outline: none;
+	margin-bottom: 10px;
+    font-family: sans-serif;
+    font-size: 1.0em;
+}
+
+.add-btn {
+	padding: 10px 20px;
+	border: none;
+	background-color: #164a85;
+	color: #fff;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.add-btn:hover {
+    background-color: #2977c0;
+}
+
+.todo-list {
+	list-style-type: none;
+	padding: 0;
+	margin-bottom: 20px;
+}
+
+.todo-list li {
+	display: flex;
+	align-items: center;
+	padding: 10px;
+	background-color: #f2f2f2;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+
+.todo-item {
+	flex-grow: 1;
+    font-family: sans-serif;
+    font-size: 1.2em;
+}
+
+.complete-btn {
+	padding: 10px;
+	border: none;
+	background-color: #0e772d;
+	color: #fff;
+	border-radius: 5px;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+.complete-btn:hover {
+    background-color: #2e9a4d;
+}
+
+.delete-btn {
+	padding: 10px;
+	border: none;
+	background-color: red;
+	color: #fff;
+	border-radius: 5px;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #ff3f3f;
+}
+
+.btn-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.complete-all-btn {
+	padding: 10px;
+	border: none;
+	background-color: #0e772d;
+	color: #fff;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.complete-all-btn:hover {
+    background-color: #2e9a4d;
+}
+
+.clear-btn {
+	padding: 10px;
+	border: none;
+	background-color: red;
+	color: #fff;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.clear-btn:hover {
+    background-color: #ff3f3f;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        max-width: 100%;
+    }
+}
+
+/* Estilos para a lista de tarefas */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+  }
+  
+  li:last-child {
+    border-bottom: none;
+  }
+  
+  .task-text {
+    flex: 1;
+  }
+  
+  .task-text.completed {
+    text-decoration: line-through;
+  }
+  
+  .task-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .task-buttons button {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .task-buttons button.remove {
+    background-color: #ff3f3f;
+    color: #fff;
+  }
+  
+  .task-buttons button.complete {
+    background-color: #4caf50;
+    color: #fff;
+  }
+  
+  .task-buttons button.toggle-all {
+    background-color: #008CBA;
+    color: #fff;
+    margin-right: 10px;
+  }
+  
+  /* Estilos para o formulário de adicionar tarefas */
+  form {
+    display: flex;
+    margin-top: 20px;
+  }
+  
+  form input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  form button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #008CBA;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+  }
+  
+  /* Estilos para a mensagem de aviso */
+  .alert {
+    color: #ff3f3f;
+    font-size: 14px;
+    margin-top: 10px;
+  }

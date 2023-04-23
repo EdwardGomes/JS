@@ -4,14 +4,14 @@
 .calculadora {
     width: 250px;
     height: 300px;
-    border: 1px solid #ccc;
+    border: 1px solid #357f81;
     border-radius: 5px;
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    background-color: #f0f0f0;
+    background-color: #357f81;
   }
   
   /* O estilo do campo de resultado */
@@ -33,24 +33,42 @@
     margin: 5px;
     font-size: 20px;
     cursor: pointer;
-    background-color: #fff;
+    background-color: white;
     transition: all 0.2s ease;
   }
   
   /* O estilo dos botões quando o cursor está sobre eles */
   .btn:hover {
-    background-color: #ddd;
+    background-color: #a7f3f3;
   }
   
+  .igual {
+    background-color: #04668d;
+    color: #fff;
+    font-size: 1.4em;
+  }
+
+  .igual:hover {
+    background-color: #0a7aa3;
+  }
   /* O estilo dos botões de operação */
   .operador {
     background-color: #ffa500;
     color: #fff;
+    font-size: 1.4em;
   }
   
+  .operador:hover {
+    background-color: #f7e013;
+  }
+
   /* O estilo do botão Apagar */
   .apagar {
-    background-color: #ff0000;
+    background-color: #f80202;
     color: #fff;
+  }
+
+  .apagar:hover {
+    background-color: #e29494;
   }
   
