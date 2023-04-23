@@ -111,7 +111,33 @@ input[type="text"] {
 	cursor: pointer;
 }
 
+.desmarcar-btn {
+	padding: 10px;
+	border: none;
+	background-color: #c4ddcc;
+	color: #fff;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.desmarcar-btn:hover {
+    background-color: #2e9a4d;
+}
+
 .complete-all-btn:hover {
+    background-color: #2e9a4d;
+}
+
+.unmark-btn {
+  padding: 10px;
+  border: none;
+  background-color: #c4ddcc;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.unmark-btn:hover {
     background-color: #2e9a4d;
 }
 
@@ -218,4 +244,8 @@ ul {
     color: #ff3f3f;
     font-size: 14px;
     margin-top: 10px;
+  }
+
+  .completed .todo-item {
+    color: green;
   }
